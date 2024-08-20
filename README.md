@@ -29,7 +29,7 @@ To divide the work effectively among the five group members, here’s a suggeste
      - Implement asynchronous methods for fetching event data from external sources.
      - Integrate with calendar services or other external APIs.
 
-5. **UI/UX and Integration (Member 5)**
+5. **UI/UX and Integration [Ryan](https://github.com/Ryan-Millard)**
    - **Task**: Develop the WPF user interface and integrate all components.
    - **Responsibilities**:
      - Design and implement the WPF interface for interacting with the event management system.

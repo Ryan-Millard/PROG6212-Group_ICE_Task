@@ -35,5 +35,3 @@ To divide the work effectively among the five group members, here’s a suggeste
      - Design and implement the WPF interface for interacting with the event management system.
      - Ensure the UI is responsive and integrates smoothly with the backend components.
      - Conduct testing to ensure all functionalities are working as expected.
-
-Each member should also regularly commit their work to the GitHub repo and coordinate with others to ensure smooth integration of all components. If needed, set up regular meetings to discuss progress and address any issues.

@@ -20,6 +20,7 @@ namespace EventManagementSystem
 
 		private void LoadEvents()
 		{
+			// Hard-coded values. Will be dynamic at a later stage
 			Events = new ObservableCollection<Event>
 			{
 				new Event { Name = "Science Seminar", Department = "Science", EventType = "Seminar", Date = new DateTime(2024, 9, 1) },
@@ -47,6 +48,7 @@ namespace EventManagementSystem
 			var selectedEventType = (cbFilterByType.SelectedItem as ComboBoxItem)?.Content.ToString();
 			var selectedDate = dpFilterByDate.SelectedDate;
 
+			// Filter the Events based on whether an option has been chosen for department, event type, and/or date
 			var filtered = Events.AsEnumerable()
 				.Where(e => (selectedDepartment == "All Departments" || e.Department == selectedDepartment) &&
 						(selectedEventType == "All Events" || e.EventType == selectedEventType) &&
@@ -62,16 +64,14 @@ namespace EventManagementSystem
 			OnSearchClick(sender, e); // Reapply the search to update the filtered events
 		}
 
-
 		private void lbEvents_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
+			// Updarte the data of the event displayed to show the selected one's details
 			if (lbEvents.SelectedItem is Event selectedEvent)
-			{
 				tbEventDetails.Text = $"Name: {selectedEvent.Name}\n" +
 					$"Department: {selectedEvent.Department}\n" +
 					$"Type: {selectedEvent.EventType}\n" +
 					$"Date: {selectedEvent.Date:MMMM d, yyyy}";
-			}
 		}
 	}
 

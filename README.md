@@ -70,7 +70,7 @@ To divide the work effectively among the five group members, here’s a suggeste
      - Develop functionality for tasks such as notifying students and updating event statuses.
      - Ensure proper synchronization and handling of concurrent operations.
 
-4. **Asynchronous Operations ([Eesan]((https://github.com/Eesan1))**
+4. **Asynchronous Operations ([Eesan](https://github.com/Eesan1))**
    - **Task**: Handle asynchronous programming for I/O-bound operations.
    - **Responsibilities**:
      - Implement asynchronous methods for fetching event data from external sources.
